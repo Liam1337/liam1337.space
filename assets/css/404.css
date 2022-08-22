@@ -1,0 +1,114 @@
+body,
+html {
+    height: 100%
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: #091117
+}
+
+body,
+main {
+    margin: 0;
+    padding: 0
+}
+
+main {
+    max-height: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue, sans-serif
+}
+
+.section-default {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0 1em
+}
+
+@media (min-width:40em) {
+    .section-default {
+        flex-wrap: nowrap
+    }
+}
+
+.logo {
+    width: 100%;
+    text-align: center;
+    margin-top: 3em;
+    flex: 1 1 100%
+}
+
+@media (min-width:40em) {
+    .logo {
+        margin-top: 0
+    }
+}
+
+.logo svg {
+    max-width: 8rem
+}
+
+@media (min-width:40em) {
+    .logo {
+        max-width: 15rem;
+        text-align: center;
+        margin-right: 2rem
+    }
+    .logo svg {
+        max-width: 10rem;
+        margin-top: 2.8rem
+    }
+}
+
+.error-wrapper h1 {
+    font-size: 1rem;
+    text-align: center;
+    margin: 0
+}
+
+@media (min-width:40em) {
+    .error-wrapper h1 {
+        font-size: 4rem;
+        text-align: left
+    }
+}
+
+.error-message .button+span {
+    display: block;
+    margin-top: 1rem
+}
+
+@media (min-width:30em) {
+    .error-message .button+span {
+        display: inline;
+        margin-top: auto
+    }
+}
+
+a,
+a:active,
+a:hover,
+a:visited {
+    color: #fff
+}
+
+.button {
+    display: inline-block;
+    width: auto !important;
+    font: inherit;
+    font-size: .9rem;
+    letter-spacing: .01em;
+    line-height: inherit;
+    padding: .5em 2em;
+    border: none !important;
+    border-radius: .2em;
+    cursor: pointer;
+    background-color: #fff;
+    color: #db222a !important;
+    text-decoration: none;
+    transition: color .15s ease-in-out
+}
